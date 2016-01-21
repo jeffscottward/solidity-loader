@@ -1,0 +1,28 @@
+{
+  "name": "solidity-loader",
+  "version": "0.0.1",
+  "description": "Webpack loader to compile a solidity contract and return output",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffscottward/solidity-loader.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "webpack",
+    "javascript"
+  ],
+  "author": "jeffscottward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffscottward/solidity-loader/issues"
+  },
+  "homepage": "https://github.com/jeffscottward/solidity-loader#readme",
+  "dependencies": {
+    "solc": "^0.1.6"
+  }
+}

@@ -4,5 +4,7 @@ module.exports = function(source) {
 	
 	this.cacheable(); 
 
-	return solc.compile(source); 
+	var compiledSOLfile = solc.compile(source);
+
+	return compiledSOLfile; 
 }

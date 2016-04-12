@@ -22,7 +22,8 @@
     "url": "https://github.com/jeffscottward/solidity-loader/issues"
   },
   "homepage": "https://github.com/jeffscottward/solidity-loader#readme",
-  "dependencies": {
-    "solc": "^0.1.6"
+  "dependencies": {},
+  "devDependencies": {
+    "solc": "^0.3.1-1"
   }
 }

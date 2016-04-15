@@ -1,6 +1,6 @@
 {
   "name": "solidity-loader",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Webpack loader to compile a solidity contract and return output",
   "main": "index.js",
   "scripts": {

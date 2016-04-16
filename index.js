@@ -33,7 +33,7 @@ module.exports = function(source) {
 
   this.cacheable();
 
-  if(typeof this.query !== 'undefined') {
+  if(typeof this.query !== "undefined") {
     var queryString = {};
     this.query.replace(
         new RegExp("([^?=&]+)(=([^&]*))?", "g"),
@@ -61,7 +61,7 @@ module.exports = function(source) {
     fileString += "'sources': " + JSON.stringify(compiled.sources) + ", ";
 
     Object.keys(compiled.contracts).forEach(function(contractName){
-      fileString += "'" + contractName + "': (typeof web3 !== 'undefined' ? web3.eth.contract(" + compiled.contracts[contractName].interface + ") : {}),";
+      fileString += "'" + contractName + "': " + '(typeof web3 !== "undefined" ? web3.eth.contract(' + compiled.contracts[contractName].interface + ") : {}),";
     });
 
     fileString = fileString.replace(/,\s*$/, "") + "}; ";

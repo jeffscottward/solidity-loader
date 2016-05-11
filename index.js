@@ -103,8 +103,8 @@ module.exports = function(source) {
           .forEach(function(contractName){
             fileString += "'" +
             contractName + "': " +
-            '(typeof web3 !== "undefined" ? web3.eth.contract(' +
-            compiled.contracts[contractName].interface +") : {}),";
+            'function (web3) { var contract = web3.eth.contract(' +
+            compiled.contracts[contractName].interface +"); contract.bytecode = '" + compiled.contracts[contractName].bytecode + "'; return contract; },";
           });
 
     // Cleans up spaces for conciseness
